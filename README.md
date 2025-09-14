@@ -1,55 +1,88 @@
-# World-Disaster-Risk-Data-Exploration
+# 🌍 World Risk Index Prediction using Machine Learning
 
-# 🌍 Week 1 Project – Climate Risk and Disaster Management
+## 📌 Project Overview
+This project focuses on predicting the **World Risk Index (WRI) Category** of countries using Machine Learning techniques.  
+The WRI measures disaster risk by considering **Exposure, Vulnerability, Susceptibility, Coping Capacity, and Adaptive Capacity**.  
 
-## 📌 Project Title
-**Data Exploration of the World Risk Index for Climate Risk and Disaster Management**
+By applying a **Random Forest Classifier**, this project automates the classification of countries into **risk categories (Low, Medium, High, Very High)**, supporting policymakers and researchers in disaster preparedness and management.
 
+---
 
-## 📖 Project Overview
-This project focuses on exploring the **World Risk Index dataset**, which measures the exposure, vulnerability, susceptibility, coping capabilities, and adaptive capacities of countries facing natural hazards.  
-The aim of this project is to understand the structure of the dataset, perform basic exploratory analysis, and prepare the foundation for deeper insights into climate risk and disaster management.
+## 🎯 Objectives
+- To clean and preprocess the World Risk Index dataset.  
+- To train and evaluate a Machine Learning model for predicting disaster risk categories.  
+- To deploy the trained model for future predictions.  
+- To demonstrate how ML can help in **real-world disaster risk management**.  
 
+---
 
 ## 🗂️ Dataset
-- **Name:** World Risk Index (WRI)  
-- **Source:** Kaggle (Global Disaster Risk Index dataset)  
-- **Rows:** ~1917  
-- **Columns:** 12  
-- **Key Features:**  
-  - Region (Country/Location)  
-  - World Risk Index (WRI)  
+- **File:** `world_risk_index.csv`  
+- **Features Used:**  
   - Exposure  
   - Vulnerability  
   - Susceptibility  
-  - Lack of Coping Capabilities  
+  - Lack of Coping Capacity  
   - Lack of Adaptive Capacities  
   - Year  
-  - Risk Categories  
+- **Target Variable:** WRI Category (Low, Medium, High, Very High)  
+
+---
+
+## 🛠️ Tools & Technologies
+- **Programming Language:** Python  
+- **Libraries:** Pandas, NumPy, Scikit-learn, Pickle  
+- **Platform:** Google Colab / Jupyter Notebook  
+- **Deployment:** Saved ML Model (`rf_model.pkl`) and Label Encoder (`label_encoder.pkl`)  
+
+---
+
+## 🔑 Methodology
+1. **Data Collection** – Imported *world_risk_index.csv*.  
+2. **Data Preprocessing** – Handled missing values (mean/mode imputation), encoded categorical data.  
+3. **Feature Selection** – Selected important WRI indicators.  
+4. **Model Training** – Applied Random Forest Classifier.  
+5. **Model Evaluation** – Measured accuracy, classification report, and confusion matrix.  
+6. **Deployment** – Saved model and label encoder using Pickle for reusability.  
+
+---
+
+## 📊 Results
+- **Model Used:** Random Forest Classifier  
+- **Performance:** Achieved reliable accuracy on test data.  
 
 
-## 🔎 Steps Performed
-1. Imported necessary Python libraries (`pandas`, `numpy`, etc.).  
-2. Loaded the dataset (`world_risk_index.csv`) into a Pandas DataFrame.  
-3. Explored the dataset using:  
-   - `.info()` → Checked column names, datatypes, and structure.  
-   - `.describe()` → Summarized numerical statistics.  
-   - `.isnull().sum()` → Identified missing values.  
-4. Handled missing values by filling them with column means.  
-5. Cleaned column names (removed leading/trailing spaces).  
-6. Documented analysis flow with clear markdown headings.  
+  
+- **Evaluation Metrics:**  
+- Accuracy Score  
+- Classification Report  
+- Confusion Matrix  
+
+---
+
+## 🚀 Deployment
+The model and encoder are saved for future predictions:  
+- `rf_mode.pkl` → Trained Random Forest model  
+- `label_encoder.pkl` → Label encoder for WRI categories  
+
+You can load these files and predict risk categories without retraining the model.
+
+---
+
+## 📌 Improvisations Done
+- Handled missing values using **mean/mode imputation**.  
+- Used **Label Encoding** for categorical targets.  
+- Chose **Random Forest** for its robustness and high accuracy.  
+- Saved **trained model and encoder** for reusability using Pickle.  
+- Generated a **clean dataset** for future model improvements.  
+
+---
+
+## 🖼️ Screenshots (to add in PPT/GitHub)
 
 
-## 💡 Improvisations Done
-- Handled missing values to improve dataset usability.  
-- Cleaned column names for better readability and coding efficiency.  
-- Structured the notebook for easy step-by-step understanding.  
-- Added markdown explanations alongside outputs for clarity.  
+---
 
-
-## 📂 Repository Structure
-├── AIML_Intern_Week1.ipynb # Jupyter Notebook with analysis
-├── world_risk_index.csv # Dataset
-└── README.md # Project documentation
-
+## ✅ Conclusion
+This project successfully demonstrates how Machine Learning can be applied to predict disaster risk categories using the World Risk Index dataset. The Random Forest Classifier provided reliable results, and the deployment ensures scalability and efficiency. This system can serve as a valuable tool for researchers and policymakers to improve disaster preparedness and mitigation strategies.  
 
