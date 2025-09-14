@@ -78,7 +78,12 @@ You can load these files and predict risk categories without retraining the mode
 
 ---
 
-## 🖼️ Screenshots (to add in PPT/GitHub)
+## 🖼️ Screenshots of Output
+
+<img width="1075" height="814" alt="Image" src="https://github.com/user-attachments/assets/3b07847c-fea9-4053-af80-cb3ca919ef32" />
+
+<img width="1212" height="799" alt="Image" src="https://github.com/user-attachments/assets/4f029fa6-934d-44e7-8d37-abc64226052e" />
+
 
 
 ---
